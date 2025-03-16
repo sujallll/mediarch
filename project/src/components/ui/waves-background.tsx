@@ -107,17 +107,17 @@ class Noise {
 }
 
 export function Waves({
-  lineColor = "rgba(255, 215, 0, 0.2)",
+  lineColor = "rgba(255, 0, 0, 0.4)",
   backgroundColor = "transparent",
-  waveSpeedX = 0.0125,
+  waveSpeedX = 0.01,
   waveSpeedY = 0.005,
-  waveAmpX = 32,
-  waveAmpY = 16,
+  waveAmpX = 50,
+  waveAmpY = 25,
   xGap = 10,
-  yGap = 32,
-  friction = 0.925,
-  tension = 0.005,
-  maxCursorMove = 100,
+  yGap = 30,
+  friction = 0.95,
+  tension = 0.008,
+  maxCursorMove = 150,
   className,
 }: WavesProps) {
   const containerRef = useRef(null)

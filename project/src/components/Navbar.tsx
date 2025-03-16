@@ -6,30 +6,27 @@ export function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-lg border-b border-yellow-500/20">
+    <nav className="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-lg">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex-1">
-            <span className="font-bold tracking-[0.2em] text-lg md:text-xl bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 to-red-600">
+          <div>
+            <span className="font-bold tracking-[0.2em] text-lg md:text-xl text-white hover:text-yellow-500 transition-colors">
               MEDIARCH
             </span>
           </div>
           
-          {/* Desktop Navigation - Centered */}
-          <div className="hidden md:flex flex-1 justify-center">
+          {/* Desktop Navigation - Right aligned */}
+          <div className="hidden md:flex justify-end">
             <NavHeader />
           </div>
 
-          {/* Empty div for flex balance */}
-          <div className="flex-1 flex justify-end">
-            {/* Mobile Menu Button */}
-            <button 
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="md:hidden text-foreground hover:text-yellow-500"
-            >
-              {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-            </button>
-          </div>
+          {/* Mobile Menu Button */}
+          <button 
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+            className="md:hidden text-white hover:text-yellow-500 transition-colors"
+          >
+            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
         </div>
 
         {/* Mobile Navigation */}

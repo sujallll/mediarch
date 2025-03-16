@@ -19,7 +19,7 @@ function AboutContent() {
               Our Mission
             </h2>
             <p className="text-lg text-foreground/80 leading-relaxed">
-              At Mediarch, we're dedicated to revolutionizing the gaming experience through innovative
+              At Mediarch, we're dedicated to revolutionizing the streaming experience through innovative
               technology and community-driven development. Our platform combines competitive gaming
               with educational resources, creating an ecosystem where players can learn, compete,
               and grow together.
@@ -44,7 +44,7 @@ function AboutContent() {
           {[
             {
               icon: <Trophy className="w-8 h-8 text-yellow-500" />,
-              title: "Competitive Excellence",
+              title: "24/7",
               description: "Host and participate in tournaments across multiple game titles"
             },
             {
@@ -54,7 +54,7 @@ function AboutContent() {
             },
             {
               icon: <Users className="w-8 h-8 text-yellow-500" />,
-              title: "Community Focus",
+              title: "Personality Development",
               description: "Connect with players who share your passion for gaming"
             }
           ].map((feature, index) => (

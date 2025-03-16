@@ -4,7 +4,7 @@ import { TowerControl as GameController, Users, Mail } from 'lucide-react';
 
 export function Footer() {
   return (
-    <footer className="bg-black/30 backdrop-blur-sm border-t border-yellow-500/20">
+    <footer className="bg-black/30 backdrop-blur-sm border-t-4 border-red-500">
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
@@ -45,7 +45,7 @@ export function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-12 pt-8 border-t border-yellow-500/20 text-center text-foreground/60">
+        <div className="mt-12 pt-8 border-t border-red-500/20 text-center text-foreground/60">
           <p>&copy; 2024 Mediarch. All rights reserved.</p>
         </div>
       </div>

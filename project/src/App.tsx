@@ -18,21 +18,21 @@ function Hero() {
     <div className="relative min-h-screen flex items-center overflow-hidden">
       <div className="absolute inset-0 overflow-hidden">
         <Waves
-          lineColor="rgba(255, 0, 0, 0.2)"
+          lineColor="rgba(255, 0, 0, 0.4)"
           backgroundColor="transparent"
-          waveSpeedX={0.02}
-          waveSpeedY={0.01}
-          waveAmpX={40}
-          waveAmpY={20}
-          friction={0.9}
-          tension={0.01}
-          maxCursorMove={120}
-          xGap={12}
-          yGap={36}
+          waveSpeedX={0.01}
+          waveSpeedY={0.005}
+          waveAmpX={50}
+          waveAmpY={25}
+          friction={0.95}
+          tension={0.008}
+          maxCursorMove={150}
+          xGap={10}
+          yGap={30}
         />
       </div>
-      <AuraGlow className="absolute top-1/4 -left-48 w-96 h-96 bg-red-600/30" />
-      <AuraGlow className="absolute bottom-1/4 -right-48 w-96 h-96 bg-yellow-500/30" />
+      <AuraGlow className="absolute top-1/4 -left-48 w-96 h-96 bg-red-600/40" />
+      <AuraGlow className="absolute bottom-1/4 -right-48 w-96 h-96 bg-yellow-500/40" />
       <div className="container mx-auto px-4 z-10 pt-20 md:pt-0">
         <div className="max-w-4xl">
           <h1 className="text-4xl md:text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-yellow-500 via-red-500 to-red-700">
@@ -40,10 +40,10 @@ function Hero() {
             Master the Art
           </h1>
           <p className="text-lg md:text-xl text-foreground/80 max-w-2xl mb-8 leading-relaxed">
-            Join the next generation of gaming excellence with Mediarch's immersive events 
-            and expert-led courses. Experience gaming like never before.
+            Join the next generation of streaming excellence with Mediarch's immersive events 
+            and expert-led courses. Experience streaming like never before.
           </p>
-          <div className="mt-8 md:mt-12 grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-8">
+          {/*<div className="mt-8 md:mt-12 grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-8">
             <div className="flex items-center gap-2">
               <Users className="h-6 w-6 text-yellow-500" />
               <span className="text-foreground/80">10K+ Active Players</span>
@@ -56,7 +56,7 @@ function Hero() {
               <Mail className="h-6 w-6 text-yellow-500" />
               <span className="text-foreground/80">24/7 Support</span>
             </div>
-          </div>
+          </div>*/}
         </div>
       </div>
     </div>
@@ -127,14 +127,13 @@ function CreatorsSection() {
       </div>
 
       {/* Red statistics section with negative margin to pull it up */}
-      <div className="bg-red-600 -mt-32">
+      <div className="bg-gradient-to-r from-yellow-500 via-red-500 to-yellow-500 -mt-32">
         {/* Creators box - positioned to overlap */}
         <div className="relative -top-32 mb-8">
           <div className="max-w-2xl mx-auto px-4">
             <div className="p-10 bg-black rounded-3xl text-white hover:shadow-2xl transition-shadow transform hover:-translate-y-1 duration-300">
               <h3 className="text-5xl font-bold mb-4">FOR CREATORS</h3>
               <p className="text-gray-200 mb-6 text-xl">BOOST YOUR CONTENT'S IMPACT</p>
-             
             </div>
           </div>
         </div>
@@ -163,7 +162,7 @@ function CreatorsSection() {
                   and join our community of creators
                 </span>
                 <span className="bg-gradient-to-l from-red-600 via-yellow-500 to-red-600 text-transparent bg-clip-text animate-gradient-reverse block mt-2">
-                  making waves in the gaming industry
+                  making waves in the streaming industry
                 </span>
               </motion.p>
             </div>
@@ -213,29 +212,29 @@ function CreatorsSection() {
 function TeamSection() {
   const team = [
     {
-      name: "Alex Chen",
-      role: "Lead Game Developer",
+      name: "Sahad 'ADEFT' Shaikh",
+      role: "",
       image: "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?auto=format&fit=crop&w=400&h=400",
-      social: { github: "#", linkedin: "#" }
+      social: { instagram: "#" }
     },
     {
-      name: "Sarah Johnson",
-      role: "Community Manager",
+      name: "Debraj 'RONZ' Saikia",
+      role: "",
       image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&h=400",
-      social: { github: "#", linkedin: "#" }
+      social: { instagram: "#" }
     },
     {
-      name: "Marcus Rodriguez",
-      role: "Tournament Director",
+      name: "Pratham 'PATRAT' Biju",
+      role: "",
       image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&h=400",
-      social: { github: "#", linkedin: "#" }
+      social: { instagram: "#" }
     },
-    {
+    /**{
       name: "Emily Zhang",
-      role: "Training Coordinator",
+      role: "",
       image: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&h=400",
       social: { github: "#", linkedin: "#" }
-    }
+    }**/
   ];
 
   return (

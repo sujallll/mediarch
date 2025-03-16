@@ -12,21 +12,21 @@ export default {
         foreground: '#FFFFFF',
       },
       animation: {
-        'wave-pulse': 'wave-pulse 4s ease-in-out infinite',
-        'glow': 'glow 2s ease-in-out infinite alternate',
-        'grid-flow': 'grid-flow 20s linear infinite',
+        'wave-pulse': 'wave-pulse 6s ease-in-out infinite',
+        'glow': 'glow 3s ease-in-out infinite alternate',
+        'grid-flow': 'grid-flow 30s linear infinite',
         'spin-slow': 'spin 20s linear infinite',
         'gradient': 'gradient 8s linear infinite',
         'gradient-reverse': 'gradient 8s linear infinite reverse',
       },
       keyframes: {
         'wave-pulse': {
-          '0%, 100%': { opacity: 0.4 },
-          '50%': { opacity: 0.7 },
+          '0%, 100%': { opacity: 0.5 },
+          '50%': { opacity: 0.8 },
         },
         'glow': {
-          '0%': { 'box-shadow': '0 0 20px #00FFC2' },
-          '100%': { 'box-shadow': '0 0 40px #00FFC2' },
+          '0%': { 'box-shadow': '0 0 30px rgba(255, 0, 0, 0.6)' },
+          '100%': { 'box-shadow': '0 0 60px rgba(255, 0, 0, 0.8)' },
         },
         'grid-flow': {
           '0%': { transform: 'translateY(0)' },
@@ -38,7 +38,7 @@ export default {
         },
       },
       backgroundImage: {
-        'cyber-grid': 'linear-gradient(transparent 97%, #00FFC2 97%), linear-gradient(90deg, transparent 97%, #00FFC2 97%)',
+        'cyber-grid': 'linear-gradient(transparent 97%, rgba(255, 0, 0, 0.3) 97%), linear-gradient(90deg, transparent 97%, rgba(255, 0, 0, 0.3) 97%)',
       },
       backgroundSize: {
         '200%': '200% auto',
